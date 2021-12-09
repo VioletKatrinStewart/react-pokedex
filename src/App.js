@@ -1,13 +1,15 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import PokeList from './components/PokeList/PokeList';
-import Controls from './components/Controls/Controls';
+
+import { Controls, PokeList } from './components';
+
 import { getPokemon } from './services/pokemon';
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState('');
+
   useEffect(() => {
     const fetchData = async () => {
       const data = await getPokemon(query);
