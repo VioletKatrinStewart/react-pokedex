@@ -31,7 +31,6 @@ function App() {
           <PokeList pokemon={pokemon} />
         </>
       )}
-      ;
     </div>
   );
 }
