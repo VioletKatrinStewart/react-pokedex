@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '@mui/material';
 
 export function Controls({ query, setQuery, setLoading }) {
   return (
@@ -11,7 +12,9 @@ export function Controls({ query, setQuery, setLoading }) {
           setQuery(e.target.value);
         }}
       />
-      <button onClick={(e) => setLoading(true)}>Search</button>
+      <Button variant="contained" onClick={() => setLoading(true)}>
+        Search
+      </Button>
     </div>
   );
 }

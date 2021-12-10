@@ -19,7 +19,7 @@ function App() {
     if (loading) {
       fetchData();
     }
-  }, [loading]);
+  }, [loading, query]);
 
   return (
     <div className="App">
