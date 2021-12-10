@@ -34,14 +34,13 @@ function App() {
       />
       {loading && <span className="loader"></span>}
       {!loading && (
-        <>
-       <PokeList 
-        pokemon={pokemon}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-        loading={loading}
-        setLoading={setLoading}
-      />  
+        <PokeList
+          pokemon={pokemon}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          loading={loading}
+          setLoading={setLoading}
+        />
       )}
     </div>
   );

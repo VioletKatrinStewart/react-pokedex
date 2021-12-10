@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '@mui/material/Button';
 
 export default function Controls({ query, setQuery, setLoading, order, setOrder }) {
   return (
@@ -15,7 +16,9 @@ export default function Controls({ query, setQuery, setLoading, order, setOrder 
         <option value="asc">Ascending</option>
         <option value="desc">Descending</option>
       </select>
-      <button onClick={() => setLoading(true)}>Search</button>
+      <Button varient="contained" onClick={() => setLoading(true)}>
+        Search
+      </Button>
     </div>
   );
 }
