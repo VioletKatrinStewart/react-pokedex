@@ -1,7 +1,16 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 
-export default function Controls({ query, setQuery, setLoading, order, setOrder }) {
+export default function Controls({
+  query,
+  setQuery,
+  setLoading,
+  order,
+  setOrder,
+  selectedType,
+  setSelectedType,
+  types,
+}) {
   return (
     <div>
       <input
@@ -15,6 +24,14 @@ export default function Controls({ query, setQuery, setLoading, order, setOrder 
       <select value={order} onChange={(e) => setOrder(e.target.value)}>
         <option value="asc">Ascending</option>
         <option value="desc">Descending</option>
+      </select>
+      <select value={selectedType} onChange={(e) => setSelectedType(e.target.value)}>
+        <option value="all">All</option>
+        {types.map((type) => (
+          <option key={type} value={type}>
+            {type}
+          </option>
+        ))}
       </select>
       <Button varient="contained" onClick={() => setLoading(true)}>
         Search
