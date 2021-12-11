@@ -15,6 +15,7 @@ export default function PokeList({ pokemon, currentPage, setCurrentPage, setLoad
           <p>{poke.hp}</p>
           <p>{poke.speed}</p>
           <p>{poke.type_2}</p>
+          <img src={poke.url_image} alt={pokemon.name} />
         </div>
       ))}
       <div style={{ color: 'black', fontWeight: 'bold' }}>Page: {currentPage}</div>
