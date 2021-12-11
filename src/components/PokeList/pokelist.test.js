@@ -1,4 +1,4 @@
-import PokeList from './Pokelist';
+import PokeList from './PokeList';
 import { render } from '@testing-library/react';
 
 test('renders the pokemon names', () => {
