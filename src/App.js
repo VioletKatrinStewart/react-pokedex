@@ -11,7 +11,6 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
-    // let timer;
     const fetchData = async () => {
       const data = await getPokemon(query, order, currentPage);
       setPokemon(data.results);
@@ -21,6 +20,10 @@ function App() {
       fetchData();
     }
   }, [loading, query, order, currentPage]);
+
+  //useEffect with empty array for fetch pokemon types use this URL  https://pokedex-alchemy.herokuapp.com/api/pokedex/types to set options in dropdown
+
+  if (loading) return <h1>LOADING</h1>;
 
   return (
     <div className="App">

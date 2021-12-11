@@ -23,3 +23,13 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+# WHAT YOU HAVENT DONE YET
+
+## YOU NEED TO RENDER A 'LOADING' STATE WHILE DATA IS BEING FETCHED
+
+## ASK-WHAT DOES CONDITIONALLY RENDER A LOADING STATE MEAN?
+
+## GET 5 CHARACTER DETAILS TO SHOW UP ON PAGE!
+
+## YOU WILL NEED SNAPSHOT TESTING
